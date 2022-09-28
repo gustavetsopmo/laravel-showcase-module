@@ -1,7 +1,9 @@
 {
     "type": "laravel-module",
     "name": "gustavetsopmo/laravel-showcase-module",
-    "description": "",
+    "description": "Shawcase Module for Laravel Framework.",
+    "keywords": ["laravel", "modules"],
+    "license": "MIT",
     "authors": [
         {
             "name": "Gustave TSOPMO",
