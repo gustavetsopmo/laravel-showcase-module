@@ -1,0 +1,11 @@
+{
+    "name": "Showcase",
+    "alias": "showcase",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\Showcase\\Providers\\ShowcaseServiceProvider"
+    ],
+    "files": []
+}
