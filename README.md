@@ -1,4 +1,4 @@
 ## Install
 ```
-composer rewuire gustavetsopmo/laravel-showcase-module
+composer require gustavetsopmo/laravel-showcase-module
 ```
