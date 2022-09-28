@@ -1,11 +1,11 @@
 {
     "type": "laravel-module",
-    "name": "nwidart/showcase",
+    "name": "gustavetsopmo/laravel-showcase-module",
     "description": "",
     "authors": [
         {
-            "name": "Nicolas Widart",
-            "email": "n.widart@gmail.com"
+            "name": "Gustave TSOPMO",
+            "email": "gustavetsopmo.gt@gmail.com"
         }
     ],
     "extra": {
