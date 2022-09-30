@@ -1,4 +1,4 @@
-<div>
+<header>
     @php
         $navLinks = [['title' => 'A-propos', 'route' => 'a-propos'], ['title' => 'Contact', 'route' => 'contact'], ['title' => 'Services', 'route' => 'services']];
     @endphp
@@ -60,4 +60,4 @@
             @endauth
         </div>
     </nav>
-</div>
+</header>

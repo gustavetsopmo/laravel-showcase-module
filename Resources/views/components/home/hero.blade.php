@@ -19,8 +19,8 @@
                 </div>
             </div>
             <div class="w-full md:w-1/2 p-2 relative">
-                <img src="{{ asset('assets/NosServices.png') }}" width="624px" height="478px"
-                    class="hidden md:block relative z-10" alt="Hero">
+                <img data-src="{{ asset('assets/NosServices.png') }}" width="624px" height="478px"
+                    class="hidden md:block relative z-10 lazy" alt="Hero">
                 <div class="absolute z-[2] w-[80%] h-[80%] bottom-0 opacity-20 -right-0 sky-gradient"></div>
                 <div class="absolute z-[0] w-[60%] h-[50%] left-10 bottom-20 opacity-50 white-gradient"></div>
                 <div class="absolute z-[0] w-[10%] h-[20%] left-40 bottom-20 opacity-100 pink-gradient"></div>

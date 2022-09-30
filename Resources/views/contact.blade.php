@@ -30,7 +30,7 @@ $items = [
     <section class="section relative overflow-hidden">
         <div class="absolute z-[1] w-[15%] h-[80%] bottom-40 -left-40 sky-gradient"></div>
         <div class="absolute z-[0] w-[10%] h-[20%] -left-0 bottom-20 opacity-50 blue-gradient"></div>
-        <div class="bg-[url('/assets/small-design.png')] bg-no-repeat bg-right absolute opacity-25 -right-20 inset-0 z-0">
+        <div class="bg-[url({{asset('/assets/small-design.png')}})] bg-no-repeat bg-right absolute opacity-25 -right-20 inset-0 z-0">
         </div>
         <div class="padding-y max-w-7xl padding-x mx-auto relative">
             <div class="flex flex-col items-center">
@@ -80,7 +80,7 @@ $items = [
     </section>
 
     {{-- <section id="faq" class="max-w-7xl mx-auto bg-white section relative">
-        <div class="bg-[url('/assets/small-design.png')] bg-no-repeat bg-left absolute opacity-25 inset-0 z-0"></div>
+        <div class="bg-[url({{asset('/assets/small-design.png')}})] bg-no-repeat bg-left absolute opacity-25 inset-0 z-0"></div>
         <div class="flex flex-col items-center relative z-1">
             <h1 class="text-center custom-title">
                 <strong>Question Fréquentes</strong>

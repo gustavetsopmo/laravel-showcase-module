@@ -25,10 +25,12 @@
                 </p>
 
                 <div class="py-8 md:mb-0">
-                    <x-showcase::outline-button>Nous-contacter</x-showcase::outline-button>
+                    <x-showcase::outline-button data-bs-toggle="modal" data-bs-target="#contactModalCenter">Nous-contacter
+                    </x-showcase::outline-button>
                 </div>
             </div>
-            <div class="w-full md:w-1/2 h-[140px] md:h-auto bg-[url('assets/hands.png')] bg-cover bg-no-repeat bg-cente overflow-hidden">
+            <div
+                class="w-full md:w-1/2 h-[140px] md:h-auto bg-[url({{asset('/assets/hands.png')}})] bg-cover bg-no-repeat bg-cente overflow-hidden">
             </div>
 
         </div>

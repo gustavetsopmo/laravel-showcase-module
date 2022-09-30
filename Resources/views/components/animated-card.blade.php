@@ -11,18 +11,18 @@
     <div {{ $attributes->merge(['class' => 'relative z-10']) }}>
         @if (isset($icon))
             <div class="flex ">
-                <img src="{{ asset($icon) }}" width="60px" height="60px"
-                    class="rounded-full h-[60px] w-[60px] float-left object-cover" alt="Image">
+                <img data-src="{{ asset($icon) }}" width="60px" height="60px"
+                    class="lazy rounded-full h-[60px] w-[60px] float-left object-cover" alt="Image">
             </div>
         @elseif (isset($svgIcon))
             <div class="flex">
-                <img src="{{ asset($svgIcon) }}" width="50px" height="50px" class="h-[50px] w-[50px] float-left"
+                <img data-src="{{ asset($svgIcon) }}" width="50px" height="50px" class="lazy h-[50px] w-[50px] float-left"
                     alt="Image">
             </div>
         @else
             @if (isset($image))
                 <div class="overflow-hidden mb-3">
-                    <img src="{{ asset($image) }}" width="387px" height="194px" class="rounded-md object-cover"
+                    <img data-src="{{ asset($image) }}" width="387px" height="194px" class="lazy rounded-md object-cover"
                         alt="Image">
                 </div>
             @endif

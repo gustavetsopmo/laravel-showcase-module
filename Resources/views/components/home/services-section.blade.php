@@ -21,13 +21,13 @@
             ],
         ];
     @endphp
-    <div class="bg-[url('/assets/small-design.png')] bg-no-repeat bg-right absolute opacity-30 -right-20 inset-0 z-0">
+    <div class="bg-[url({{asset('/assets/small-design.png')}})] bg-no-repeat bg-right absolute opacity-30 -right-20 inset-0 z-0">
     </div>
     <div class="padding-x max-w-7xl custom-padding mx-auto relative z-10">
         <div class="flex flex-col-reverse md:flex-row">
             <div class="w-full md:w-1/2 pt-10 md:pt-0 self-center relative">
-                <img src="{{ asset('assets/NosServices.png') }}" width="576px" height="441px" alt="Services"
-                    class="md:w-[90%] md:h-[90%] relative z-[5] animate-up-down" />
+                <img data-src="{{ asset('assets/NosServices.png') }}" width="576px" height="441px" alt="Services"
+                    class="md:w-[90%] md:h-[90%] relative z-[5] animate-up-down lazy" />
                 <div class="absolute z-[1] w-[80%] h-[80%] bottom-40 -left-40 sky-gradient"></div>
                 <div class="absolute z-[0] w-[50%] h-[50%] -left-0 bottom-20 opacity-50 blue-gradient"></div>
             </div>
@@ -44,7 +44,7 @@
                 <div class="flex flex-col mt-10 space-y-6">
                     @forelse ($services as $service)
                         <div class="flex items-start hover:bg-sky-900/10 rounded-md p-2">
-                                <img src={{ asset($service['icon']) }} height="44px" width="44px" class="object-cover h-[44px] w-[44px]"
+                                <img data-src={{ asset($service['icon']) }} height="44px" width="44px" class="lazy object-cover h-[44px] w-[44px]"
                                 alt="{{ $service['title'] }}" />
                             <div class="pl-4">
                                 <p class="text-blue-500 font-bold text-xl mb-2">
