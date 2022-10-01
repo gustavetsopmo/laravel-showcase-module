@@ -1,2 +1,7 @@
 import './bootstrap';
-// import '../css/app.css';
+import Turbolinks from "turbolinks";
+import LazyLoad from "vanilla-lazyload";
+import 'tw-elements';
+
+window.LazyLoad = LazyLoad;
+Turbolinks.start();

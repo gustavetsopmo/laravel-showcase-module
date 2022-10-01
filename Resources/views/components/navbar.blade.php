@@ -1,23 +1,23 @@
 <header>
     @php
-        $navLinks = [['title' => 'A-propos', 'route' => 'a-propos'], ['title' => 'Contact', 'route' => 'contact'], ['title' => 'Services', 'route' => 'services']];
+        $navLinks = [['title' => 'Accueil', 'route' => '/'], ['title' => 'A-propos', 'route' => 'a-propos'], ['title' => 'Contact', 'route' => 'contact'], ['title' => 'Services', 'route' => 'services']];
     @endphp
-    <nav class="bg-sky-900 relative w-full z-50">
-        <div class="max-w-7xl padding-x mx-auto flex justify-between  py-4 border-b-[.5px] border-blue-300">
+    <nav class="bg-sky-900/90 relative w-full z-50">
+        <div class="max-w-7xl padding-x mx-auto flex justify-between  py-4 border-b-[.5px border-blue-300">
             <div class="flex  justify-between  w-full">
                 <!-- Logo -->
                 <div class="shrink-0 flexitems-center">
                     <a href="{{ route('/') }}">
-                        <x-application-logo class="block h-12 w-auto" />
+                        <x-showcase::application-logo class="block h-12 w-auto" />
                     </a>
                 </div>
 
                 <!-- Navigation Links -->
                 <div class="hidden space-x-6 sm:flex">
                     @foreach ($navLinks as $link)
-                        <x-nav-link :href="route($link['route'])" :active="request()->routeIs($link['route'])">
+                        <x-showcase::nav-link :href="route($link['route'])" :active="request()->routeIs($link['route'])">
                             {{ __($link['title']) }}
-                        </x-nav-link>
+                        </x-showcase::nav-link>
                     @endforeach
                 </div>
             </div>
@@ -25,7 +25,7 @@
             <!-- Settings Dropdown -->
             @auth
                 <div class="hidden sm:flex sm:items-center sm:ml-6">
-                    <x-dropdown align="right" width="48">
+                    <x-showcase::dropdown align="right" width="48">
                         <x-slot name="trigger">
                             <button
                                 class="flex truncate items-center text-sm font-medium text-gray-300 hover:text-sky-500 hover:border-gray-300 focus:outline-none focus:text-gray-700 focus:border-gray-300 transition duration-150 ease-in-out">
@@ -47,14 +47,14 @@
                             <form method="POST" action="{{ route('logout') }}">
                                 @csrf
 
-                                <x-dropdown-link :href="route('logout')"
+                                <x-showcase::dropdown-link :href="route('logout')"
                                     onclick="event.preventDefault();
                                                 this.closest('form').submit();">
                                     {{ __('Log Out') }}
-                                </x-dropdown-link>
+                                </x-showcase::dropdown-link>
                             </form>
                         </x-slot>
-                    </x-dropdown>
+                    </x-showcase::dropdown>
                 </div>
             @else
             @endauth

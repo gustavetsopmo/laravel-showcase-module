@@ -2,10 +2,8 @@
 @section('title', 'A-propos')
 
 @section('content')
-    <section class="section">
-        <div class="max-w-7xl mx-auto">
-            <h1 class="custom-title text-center">A-propos</h1>
-        </div>
-        
-    </section>
+    <x-showcase::header-section title="A-propos de figuil.com" subTitle="Helping people and teams solve complex problems" />
+
+    @include('showcase::components.home.team-section')
+
 @endsection

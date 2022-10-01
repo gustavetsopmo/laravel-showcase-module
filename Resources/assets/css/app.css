@@ -16,7 +16,7 @@
         @apply after:absolute after:inset-0;
     }
     .custom-title {
-        @apply text-3xl md:text-4xl lg:text-7xl font-extrabold text-sky-900;
+        @apply text-3xl md:text-4xl lg:text-5xl font-extrabold text-sky-900;
     }
 
     .section {

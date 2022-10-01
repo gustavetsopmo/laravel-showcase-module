@@ -1,12 +1,12 @@
 <footer class="z-10">
     @php
-        $navLinks = [['title' => 'A-propos', 'route' => 'a-propos'], ['title' => 'Contact', 'route' => 'contact'], ['title' => 'Services', 'route' => 'services']];
+        $navLinks = [['title' => 'Accueil', 'route' => '/'], ['title' => 'A-propos', 'route' => 'a-propos'], ['title' => 'Contact', 'route' => 'contact'], ['title' => 'Services', 'route' => 'services']];
     @endphp
     <div class="padding-x mx-auto bg-sky-900/90 py-3 text-white">
         <div class="md:flex md:row max-w-7xl mx-auto">
             <div class="w-full md:w-3/12 py-6">
                 <div class="relative">
-                    <x-application-logo class="h-12" />
+                    <x-showcase::application-logo class="h-12" />
                 </div>
             </div>
             <div class="flex flex-col w-full md:w-3/12 items-start py-5 md:text-left">
@@ -14,9 +14,9 @@
                 <div class="h-1 w-24 mt-2 mb-3 rounded-sm bg-sky-500"></div>
                 <div class="flex flex-col space-y-3">
                     @foreach ($navLinks as $link)
-                        <x-nav-link :href="route($link['route'])" :active="request()->routeIs($link['route'])">
+                        <x-showcase::nav-link :href="route($link['route'])" :active="request()->routeIs($link['route'])">
                             {{ __($link['title']) }}
-                        </x-nav-link>
+                        </x-showcase::nav-link>
                     @endforeach
                 </div>
             </div>

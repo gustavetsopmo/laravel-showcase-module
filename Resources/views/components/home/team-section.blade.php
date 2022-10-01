@@ -29,7 +29,7 @@
     <!-- Meet the Team -->
     <div class="padding-y padding-x max-w-7xl mx-auto relative z-20">
         <!-- Section Header -->
-        <div class="flex flex-wrap justify-start text- mb-24">
+        <div class="flex flex-wrap justify-start text- mb-16">
             <div class="w-full lg:w-6/12">
                 <!-- Header -->
                 <h2 class="custom-title mb-8">

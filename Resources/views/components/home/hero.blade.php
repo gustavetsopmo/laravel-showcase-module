@@ -1,4 +1,4 @@
-<section class="py-12 padding-x bg-sky-900">
+<section class="py-12 padding-x bg-sky-900/90">
     <div class="w-full h-full flex items-center max-w-7xl mx-auto justify-between">
         <div class=" md:flex items-center mt-6 md:mt-2 ">
             <div class="w-full md:w-1/2 flex flex-col">
@@ -22,7 +22,7 @@
                 <img data-src="{{ asset('assets/NosServices.png') }}" width="624px" height="478px"
                     class="hidden md:block relative z-10 lazy" alt="Hero">
                 <div class="absolute z-[2] w-[80%] h-[80%] bottom-0 opacity-20 -right-0 sky-gradient"></div>
-                <div class="absolute z-[0] w-[60%] h-[50%] left-10 bottom-20 opacity-50 white-gradient"></div>
+                <div class="absolute z-[0] w-[60%] h-[50%] left-10 bottom-20 opacity-50 sky-gradient"></div>
                 <div class="absolute z-[0] w-[10%] h-[20%] left-40 bottom-20 opacity-100 pink-gradient"></div>
             </div>
         </div>

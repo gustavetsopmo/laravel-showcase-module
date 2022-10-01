@@ -26,6 +26,7 @@ $items = [
 @endphp
 
 @section('content')
+<x-showcase::header-section title="Nos contacts" subTitle="Nous sommes disponible pour vous de Lundi à Samedi de 08H00 à 17H00" />
 
     <section class="section relative overflow-hidden">
         <div class="absolute z-[1] w-[15%] h-[80%] bottom-40 -left-40 sky-gradient"></div>
@@ -34,19 +35,10 @@ $items = [
         </div>
         <div class="padding-y max-w-7xl padding-x mx-auto relative">
             <div class="flex flex-col items-center">
-                <h1 class="text-center custom-title px-3">
-                    <strong>Nos contacts</strong>
-                </h1>
-                <p class="lg:w-2/3 text-center px-3 w-full md:w-3/5 mx-auto leading-relaxed text-md text-gray-700 text-p">
-                    Nous sommes disponible pour vous de Lundi à Samedi de 08H00 à
-                    17H00
-                </p>
-                <div class="blue-bar mt-3"></div>
-
                 <div
-                    class="flex mt-4 md:mt-12 flex-wrap flex-col md:gap-x-6 md:grid md:grid-cols-3 justify-between md:flex-row">
+                    class="flex mt-4 md:mt-6 flex-wrap flex-col md:gap-x-6 md:grid md:grid-cols-3 justify-between md:flex-row">
                     @forelse ($items as $item)
-                        <x-showcase::animated-card class="flex flex-col items-center" :title="$item['title']" :description="$item['description']">
+                        <x-showcase::animated-card class=" flex flex-col items-center text-center" :title="$item['title']" :description="$item['description']">
                             <x-slot:link>
                                 {!! $item['link'] !!}
                             </x-slot:link>

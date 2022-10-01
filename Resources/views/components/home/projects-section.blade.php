@@ -5,7 +5,7 @@
     <div class="padding-y padding-x max-w-7xl mx-auto relative z-2">
         <p class="text-sky-500 text-sm uppercase font-medium">Projets realisés</p>
         <h2 class="w-full mt-2 custom-title">
-            Nos reactilsations
+            Nos realisations
         </h2>
         <div class="h-1 w-16 rounded-sm mt-3 mb-8 bg-sky-500"></div>
 
